@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug scan.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/src/tests/scan.py",
+            "cwd": "${workspaceFolder}/tests/src/tests/",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/tests/.venv/bin/python"
+        }
+    ]
+}
