@@ -15,6 +15,7 @@ The goal of this service is to represent and track how many milliseconds have pa
 - Properties: read
 - Data format: binary uint32, little-endian
     - Choosing binary becuause I want to send as close to the real representation of the data we are exsposing so binrary to me for a number based value makes most sense.
+- Value is computed at read time (onRead), so reads are always current.
 
 ### Connection behavior
 - characteristic time_connected_ms
