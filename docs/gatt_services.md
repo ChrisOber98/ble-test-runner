@@ -27,7 +27,9 @@ The goal of this service is to represent and track how many milliseconds have pa
         - Ble is set to start advertising again.
 
 ### How I'll verify it
-Tolerance: TBD. Determine by measuring 20 read pairs; set to ~2× the worst observed error.
+Tolerance: 250ms when running experiments I found the largest difference of time between reads being around 50ms so I am 5x that tolerance to be super safe.
+
+The tests wont be able to catch ble timing disruptions like being late on the bus... this comes in 30 ms and we can not do anything about it hence why we need the tolerance.
 
 - Manually
     - Open NRF confirm device is advertising and start timer

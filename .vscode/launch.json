@@ -10,6 +10,16 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "python": "${workspaceFolder}/tests/.venv/bin/python"
+        },
+        {
+            "name": "read_time_connected.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tests/src/tests/read_time_connected.py",
+            "cwd": "${workspaceFolder}/tests/src/tests/",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/tests/.venv/bin/python"
         }
     ]
 }
